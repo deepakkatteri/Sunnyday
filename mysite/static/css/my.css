@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	background: #000;
+}
+video#bgvid{ 
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background: url('images/poster.jpg') no-repeat;
+	background-size: cover;
+	transition: 1s;
+	opacity 0.9;
+	}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-arrow-left:before {
+  content: "\f060";
+}
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+
+/* ----------------------------------------------------
+	STYLING
+-------------------------------------------------------*/
+
+text{
+	color: #fff;
+}
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
+.contact-text{
+	color: #bbb;
+	font-size: 30px;
+	font-family:"Times New Roman",Times,sans-serif;
+	}
+.explain-text{
+	color: #fff;
+	font-size: 3vw;
+}
+.head-size{
+	font-size: 50px;
+	color: #fff;
+}
+

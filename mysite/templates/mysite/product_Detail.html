@@ -1,0 +1,49 @@
+
+{% extends "mysite/base.html" %}
+
+{% block content %}
+<div class="row>"
+
+<H1></H1>
+<ul class="nav nav-tabs nav-justified">
+<li><a href="#">Home</a></li>
+<li><a href="#">News</a></li>
+<li class="active"><a href="product">Products</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Queries</a></li>
+</ul> 
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+
+<div class="container">
+<table>
+	<tr class="blank_row">
+		<td colspan="3"></td>
+	</tr>
+</table>
+	<div class="table-responsive">
+		<table class="table table-bordered table-hover">
+
+{{% for object in products_detail %}
+    <div class="col-md-5">
+    </tr><img src="{{object.Product_Image.url}}" height="300">
+    <div clas="row">
+    {{object.Product_Model}}
+    <div clas="row">
+    {{object.Product_Description_Para1|linebreaks}}
+    </div>
+    </div>
+    </div>
+    <div class="col-md=2">
+    </div>
+    </div>
+{% endfor %}
+</div>
+</table>
+		
+</div>
+{% endblock content %}
